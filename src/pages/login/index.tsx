@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Fragment } from "react";
 
 export default function Login() {
@@ -24,7 +25,14 @@ export default function Login() {
                         <button className={`bg-white  m-2 p-2 rounded`}>Sign In</button>
                     </form>
                         <span className={`flex text-neutral-700`}>
-                            <h1 className={`p-1`}>Have we met before?</h1><h1 className={`p-1 text-red-600 hover:text-red-800 cursor-pointer transition-all duration-100`}>Join us</h1>
+                            <h1 className={`p-1`}>
+                                Have we met before?
+                            </h1>
+                            <h1 className={`p-1 text-red-600 hover:text-red-800 cursor-pointer transition-all duration-100`}>
+                                <Link href={`/register`}>
+                                Join us
+                                </Link>
+                            </h1>
                         </span>
                         <span className={`flex text-neutral-700`}>
                             <h1 className={`p-1`}>
