@@ -13,6 +13,14 @@ module.exports = {
         '3/4-screen': '75vh',
         '4/5-screen': '80vh',
       },
+      backgroundImage: {
+        'woodworm_pattern': "url('/woodworm_pattern.svg')",
+        'moth': "url('/moth.svg')",
+      },
+      backgroundSize: {
+        '50%': '50%',
+        '90%': '90%',
+      }
     },
   },
   plugins: [],
